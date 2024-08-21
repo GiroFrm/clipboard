@@ -58,6 +58,7 @@
     --fw-bold: 600;
 
     --fs-300: 1rem;
+    --fs-400: 2rem;
      
 
   }
@@ -65,21 +66,39 @@
   body{
       font-size: var(--fs-300);
       font-family: var(--ff-base);
+      text-align: center;
+      color: var(--clr-neutral-400)
+  }
 
-     
+  .fs-400{
+    font-size: var(--fs-400);
+  }
 
-      /* display: grid;
-      place-content: center; */
+  .color-neutral-700{
+      color: var(--clr-neutral-700)
+  }
+
+  .mg-bottom-16{
+    margin-bottom: 1rem;
+  }
+
+  .mg-bottom-64{
+    margin-bottom: 4rem;
   }
 
   header{
-   text-align: center;
-   outline: 3px solid yellow;
    padding-top: 7.8rem;
-
 }
+
+img{
+    display: inline;
+}
+
 .logo{
     align-self: center;
-    outline: 3px solid red;
-    display: inline;
+   
+}
+
+.hero-title span{
+    display: block;
 }
