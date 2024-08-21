@@ -58,6 +58,7 @@
     --fw-bold: 600;
 
     --fs-300: 1rem;
+    --fs-320: 1.5rem;
     --fs-350: 1.75rem;
     --fs-400: 2rem;
      
@@ -71,6 +72,10 @@
       color: var(--clr-neutral-400)
   }
 
+  .fw-bold{
+    font-weight: var(--fw-bold);
+  }
+
   .fs-400{
     font-size: var(--fs-400);
   }
@@ -79,8 +84,16 @@
     font-size: var(--fs-350);
   }
 
+  .fs-320{
+    font-size: var(--fs-320);
+  }
+
   .color-neutral-700{
       color: var(--clr-neutral-700)
+  }
+
+  .mg-bottom-10{
+   margin-bottom: 0.625rem;
   }
 
   .mg-bottom-16{
@@ -99,10 +112,26 @@
   .mg-bottom-64{
     margin-bottom: 4rem;
   }
+  
+  .mg-bottom-90{
+    margin-bottom: 5.6rem;
+  }
+
+  .mg-bottom-130{
+    margin-bottom: 8.1rem;
+  }
+
+  .mg-bottom-186{
+    margin-bottom: 11.6rem;
+  }
 
   .grid-flow{
    display: grid;
    gap: 5rem;
+  }
+
+  .gap-56{
+    gap: 3.5rem;
   }
 
   header{
@@ -151,3 +180,13 @@ img{
     background-color: var(--clr-secondary-300);
 }
 
+
+.card img{
+ margin-bottom: 2.5rem;
+}
+
+.card__title{
+ margin-bottom: 1.125rem;
+ font-weight: var(--fw-bold);
+
+}
