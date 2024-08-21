@@ -68,8 +68,8 @@
 
      
 
-      display: grid;
-      place-content: center;
+      /* display: grid;
+      place-content: center; */
   }
 
   header{
