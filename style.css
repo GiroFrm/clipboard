@@ -64,4 +64,5 @@
 
   body{
       font-size: var(--fs-300);
+      font-family: var(--ff-base);
   }
