@@ -65,4 +65,21 @@
   body{
       font-size: var(--fs-300);
       font-family: var(--ff-base);
+
+     
+
+      display: grid;
+      place-content: center;
   }
+
+  header{
+   text-align: center;
+   outline: 3px solid yellow;
+   padding-top: 7.8rem;
+
+}
+.logo{
+    align-self: center;
+    outline: 3px solid red;
+    display: inline;
+}
