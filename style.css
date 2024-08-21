@@ -102,3 +102,8 @@ img{
 .hero-title span{
     display: block;
 }
+
+.hero-title{
+    line-height: 1.3;
+}
+
