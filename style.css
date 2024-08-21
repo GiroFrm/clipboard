@@ -58,6 +58,7 @@
     --fw-bold: 600;
 
     --fs-300: 1rem;
+    --fs-350: 1.75rem;
     --fs-400: 2rem;
      
 
@@ -74,6 +75,10 @@
     font-size: var(--fs-400);
   }
 
+  .fs-350{
+    font-size: var(--fs-350);
+  }
+
   .color-neutral-700{
       color: var(--clr-neutral-700)
   }
@@ -86,12 +91,23 @@
     margin-bottom: 1.5rem;
   }
 
+  .mg-bottom-60{
+    margin-bottom: 3.75rem;
+    outline: 3px solid green;
+  }
+
   .mg-bottom-64{
     margin-bottom: 4rem;
   }
 
+  .grid-flow{
+   display: grid;
+   gap: 5rem;
+  }
+
   header{
    padding-top: 7.8rem;
+   margin-bottom: 10rem;
 }
 
 img{
