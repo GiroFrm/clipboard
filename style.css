@@ -72,6 +72,10 @@
       color: var(--clr-neutral-400)
   }
 
+  a{
+    text-decoration: none;
+  }
+
   .fw-bold{
     font-weight: var(--fw-bold);
   }
@@ -205,4 +209,42 @@ img{
 
 .CTA{
     padding-bottom: 11rem;
+}
+
+footer{
+    background-color: var(--clr-neutral-400);
+    color:var(--clr-neutral-700);
+
+    padding-block: 3.25rem;
+}
+
+footer a p{
+    color:var(--clr-neutral-700);
+    font-weight: var(--fw-regular);
+
+    }
+
+.secondary-logo{
+    max-width: 55px;
+    display: block;
+   
+    margin-bottom: 2.5rem;
+
+}
+
+.left-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+
+    margin-bottom: 5rem;
+
+}
+
+.right-links {
+    display: flex;
+    justify-content: center;
+    gap:2.5rem;
 }
