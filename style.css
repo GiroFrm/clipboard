@@ -70,7 +70,9 @@
       font-size: var(--fs-300);
       font-family: var(--ff-base);
       text-align: center;
-      color: var(--clr-neutral-400)
+      color: var(--clr-neutral-400);
+
+      padding-inline: 2rem;
   }
 
   a{
