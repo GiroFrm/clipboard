@@ -63,7 +63,14 @@
     --fs-350: 1.75rem;
     --fs-400: 2rem;
      
+    --size-250: 2rem;
 
+  }
+
+  @media(min-width: 75em){
+    :root{
+    --size-250: 10.31rem;
+    }
   }
 
   body{
@@ -72,7 +79,13 @@
       text-align: center;
       color: var(--clr-neutral-400);
 
-      padding-inline: 2rem;
+       
+  }
+
+  @media(min-width: 75em){
+    body{
+       
+    }
   }
 
   a{
@@ -99,6 +112,10 @@
       color: var(--clr-neutral-700)
   }
 
+  .padding-inline{
+  padding-inline: var(--size-250);
+  }
+
   .mg-bottom-10{
    margin-bottom: 0.625rem;
   }
@@ -113,7 +130,7 @@
 
   .mg-bottom-60{
     margin-bottom: 3.75rem;
-    outline: 3px solid green;
+   
   }
 
   .mg-bottom-64{
@@ -135,11 +152,25 @@
     margin-bottom: 11.6rem;
   }
    
- 
+   .max-width{
+    max-width: 730px;
+    margin: auto;
+   }
 
   .grid-flow{
    display: grid;
    gap: 5rem;
+  }
+
+  .snippets-grid{
+    display: grid;
+    gap: 5rem;
+  }
+
+  @media(min-width: 75em){
+    .snippets-grid{
+        gap:0;
+    }
   }
 
   .gap-56{
@@ -194,10 +225,19 @@ img{
 
 .btn-ios{
     background-color: var(--clr-primary-400);
+ 
+    &:hover{
+        opacity: 0.9
+    }
 }
 
 .btn-mac{
     background-color: var(--clr-secondary-300);
+   
+    &:hover{
+        opacity: 0.9;
+    }
+
 }
 
 .workflow{
@@ -210,11 +250,16 @@ img{
 .snippets-features{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
     gap: 7rem;
    
 }
+.snippets-img{
+    margin-left: -30px;
+}
 
 .wrapper{
+   
     justify-self: start;
     text-align: left;
     max-width: 350px;
@@ -226,8 +271,15 @@ img{
  grid-template-columns: 1fr 1fr 1fr;
 }
 }
-.card img{
- margin-bottom: 2.5rem;
+
+.card {
+ max-width: 400px;
+ margin:auto
+  
+}
+
+.img-paper{
+    max-width: 35px;
 }
 
 .card__title{
@@ -272,21 +324,10 @@ footer a p{
 .secondary-logo{
     max-width: 55px;
     margin-bottom: 2.5rem;
-    place-self: center;
+    /* place-self: center; */
+    align-self: center;
 
 }
-
-.left-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem;
-
-    margin-bottom: 5rem;
-
-}
-
 
 
 .right-links {
@@ -306,7 +347,7 @@ footer a p{
 
 @media(min-width: 75em){
     .footer{
-        outline: 3px solid green;
+       
         grid-template-columns: repeat(6, 1fr);
         grid-row: 100px;
         gap: 0rem;
