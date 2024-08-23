@@ -134,6 +134,8 @@
   .mg-bottom-186{
     margin-bottom: 11.6rem;
   }
+   
+ 
 
   .grid-flow{
    display: grid;
@@ -158,19 +160,27 @@ img{
    
 }
 
-.hero-title span{
-    display: block;
-}
 
 .hero-title{
     line-height: 1.3;
+    font-size: clamp(2rem ,3vw, 3rem);
 }
 
 .btn-container{
     padding-inline: 2rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
     gap: 1.5rem
 }
+
+ @media(min-width: 75em){
+  .btn-container{
+    flex-direction: row;
+  }
+ }
 
 .btn-primary {
     cursor: pointer;
@@ -190,7 +200,32 @@ img{
     background-color: var(--clr-secondary-300);
 }
 
+.workflow{
+    display: grid;
+    gap: 30px;
+    }
 
+@media(min-width: 75em){
+
+.snippets-features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+   
+}
+
+.wrapper{
+    justify-self: start;
+    text-align: left;
+    max-width: 350px;
+}
+
+.workflow{
+ 
+ gap: 30px;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+}
 .card img{
  margin-bottom: 2.5rem;
 }
