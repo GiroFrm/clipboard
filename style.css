@@ -245,6 +245,13 @@ img{
 
 }
 
+@media(min-width: 75em){
+    .brands{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .CTA{
     padding-bottom: 11rem;
 }
