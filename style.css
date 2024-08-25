@@ -86,6 +86,10 @@
     .hero-description-lg{
         font-size: 1.25rem;
     }
+
+    .fs-lg{
+        font-size: 1.125rem;
+    }
   }
 
   a{
