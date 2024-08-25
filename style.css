@@ -63,7 +63,7 @@
     --fs-350: 1.75rem;
     --fs-400: 2rem;
      
-    --size-250: 2rem;
+    --size-250: 2rem;  
 
   }
 
@@ -333,6 +333,11 @@ footer a p{
 
 }
 
+footer a p:hover {
+ color: var(--clr-primary-400);
+
+}
+
 
 .right-links {
     display: flex;
@@ -344,8 +349,8 @@ footer a p{
     display: grid;
     gap: 2rem;
     place-content: center;
-  
-   
+
+
 }
 
 
